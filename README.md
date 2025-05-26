@@ -91,12 +91,62 @@ slugging_perc	0.140635	0.076169
 onbase_plus_slugging	0.240129	0.105525
 GIDP	4.084795	5.176486
 
+![image](https://github.com/user-attachments/assets/8f1a46fb-6f04-4cca-b0c0-d4f93b687371)
+![image](https://github.com/user-attachments/assets/8697c28c-6733-4e84-a3ee-fcde254aaa5a)
+
+
+
+
 다음은 전처리 결과 나타난 각 기술적 수치 별로 평균과 표준편차이다. 다음 결과물들을 보면 알 수 있듯이 MLB가 표준편차가 적게 차이나면 평균값 자체가 높다. 이는 MLB의 평균적인 수준 자체가 KBO보다 높은 수준의 선수들이 다수 포진하고 있다는 것을 알 수 있다.
 
 ![image](https://github.com/user-attachments/assets/198d804c-7be5-4e9f-a023-7447c7cfb227)
 
-  
+5. 유형의 적립.
+   이제 비교를 통해 대략적인 차이가 수치적으로 육안으로 보일 정도의 차이가 있다는 것은 알겠다.
+   하지만 아직 이것은 수치적으로 계산의 영역으로만 알 수 있을 뿐, 우린 어떤 수치들이 얼마나 차이가 있어서 어떤 경기로 게임을 푸는 지를 알 지는 못한다.
+   지금까지 구한 내용은 그저, MLB가 KBO에 비해 수준 높은 선수가 많다는 정보들 뿐이다.
+   이제는 전처리를 통해 얻은 수치들을 머신러닝의 과정을 통해 분류하는 과정이 필요하다.
 
-6. 유사도 비교
+
+기술력 비교
+└ PCA(7개의 직접 지표) + t-검정 + RandomForest 분류 기법을 활용
+└ → 리그별 특성 분포 파악, 분류 가능성 확인, 주요 분류 변수 도출
+
+<t- 검정>
+![image](https://github.com/user-attachments/assets/c685027e-126f-48ca-8aa7-e5f927e40d3b)
+
+
+<pca 분석 결과>
+![image](https://github.com/user-attachments/assets/3069cbea-beb0-47ae-8de0-2b85a3cbb871)
+
+<randomforest 분류 기법 결과>
+
+![image](https://github.com/user-attachments/assets/7ed30ddf-e105-46e7-bd15-0150e21cb003)
+
+
+
+
+
+성향 분류
+└ KMeans(n=3~5, 직접 지표와 전략 지표 활용)
+└ → 타자 유형을 군집화하고 리그별로 유형의 분포 비율 분석
+
+<kmeans분류 기법>
+
+![image](https://github.com/user-attachments/assets/f434e160-e4fc-464f-8d26-d789bb7b3015)
+
+
+리그 스타일 차이 해석
+└ 전략 지표 및 간접 지표의 평균 값을 비교
+└ → KBO는 희생타와 도루 중심, MLB는 장타 중심일 가능성 제시
+
+보고서 구성
+└ 평균/표준편차 테이블, PCA 시각화, 군집 시각화, 주요 변수 중요도, 분석 해석 문장 포함
+
+
 
 7. 결론 도출
+
+위의 결과를 따지면 단순히 kbo와 mlb는 실력의 차이만이 존재하는 것이 아니라는 것이 아니다. 물론 평균적인 수치 모두가 kbo가 낮다고 하더라도 중요한 것은 mlb는 군집화가 잘 이루어져 유의미한 군집을 이루는 것에 반해 kbo는 이와 대조적인 성격을 가지고 있다는 것이다.
+하지만 현대의 야구는 우습게도 단순히 실력적으로 우위에 있는 mlb를 동경하며, 그들에 맞는 맞춤형 전략을 고수하려고만 한다.
+이런 상황에서 우리는 단순히 kbo의 낮은 성적을 질탄하는 것이 아닌 유의미한 결과를 위해 kbo의 성격에 맞는 맞춤형 타순을 적립해야만 한다.
