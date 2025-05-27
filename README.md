@@ -38,7 +38,33 @@
     그 이후 자료들 중에서 겹치는 컬럼(특히나 기술적 기록)등을 우선적으로 찾고 그 이후 중요도가 높은 것들부터 출력할 수 있도록 정리하는 과정이 필요하다.
     특히나, 비교 연도가 2023년도이기에 자료 1 중에서도 2023년도 정보들만 따로 뽑아서 정리해야 한다.
 
+    또한 야구 선수에게 있어서 중요한 정보 중 하나인 피지컬적 정보들 또한 정리해서 추려낼 필요성이 있다. 이에 따른 기준은 2022년도의 기준으로 진행했다. 그 이     유는 2023년도에 혹은 이와 근사한 년도 중 가장 많은 데이터로 신뢰성을 확보한 데이터가 2022년도식 데이터이면서 또한 성인의 신체는 성장기를 지난 시점에서       유의미할 정도로 변하지 않는다는 사실에 근거하였다.
+
 4. 전처리, 시각화
+
+   1. 타자의 피지컬적  비교
+
+타자의 피지컬적 비교에는 크게 다음과 같은 목표들이 있다. 
+1)몸무게.
+2)키
+3)나이
+
+다음과 같은 타겟들을 목표로 두고 피지컬적 비교를 할 때 결과는 다음과 같이 나왔다. 
+
+
+
+![image](https://github.com/user-attachments/assets/eb6a5b35-2bbb-4f5c-a66f-7dc2faecbc66)
+![image](https://github.com/user-attachments/assets/66e41791-ccce-438c-aa3e-c11a381f0a75)
+![image](https://github.com/user-attachments/assets/7de0cb07-99c9-4252-9199-922ed25ac407)
+![image](https://github.com/user-attachments/assets/40929c58-5780-4843-aa5a-6985675fa8aa)
+![image](https://github.com/user-attachments/assets/ce87c029-0657-4b47-8f6b-ea3552aa3fa8)
+![image](https://github.com/user-attachments/assets/8d22f652-c247-4794-ac9e-ba2c7c1fe213)
+
+
+
+
+
+
 
    [KBO vs MLB] 평균 비교
 리그	KBO	MLB
