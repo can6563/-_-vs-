@@ -1,6 +1,6 @@
-# -_-vs-
+# Kbo Customized Optimized Tarsher Organization
 
-데이터 마이닝_동양 vs 서양
+
 
 작성자: 2091104 이찬희 
 
