@@ -114,11 +114,6 @@ kbo_dataset_2018_2024.csv
 
 자료 출처: kaggle
 
-# - baseball_players.csv  // 위 파일은 mlb 선수들의 신체적 정보 데이터이다. 추후 연구 과정에서 연구 목적과 맞지 않는다는 판단 하에 자연스럽게 전처리 했다.
-# - kbo_batter_physical_data_cleaned.csv // 위 파일은 kbo 선수들의 신체적 정보 데이터이다. 마찬가지고 연구 목적과 맞지 않는다는 판단 하에 자연스럽게 전처리 했다.
-
-
-
 
 2.3 사용된 주요 성적 지표
 
